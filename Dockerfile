@@ -13,4 +13,6 @@ RUN git checkout f806921
 RUN apk del git
 RUN rm -rf .git
 RUN rm .gitignore Pulse-AP.jpg README.md config.yaml.sample fetchprices.md fetchprices.js
+RUN rm Dockerfile
+RUN rm docker-compose.yaml
 ENTRYPOINT ["node", "elwiz.js"]
