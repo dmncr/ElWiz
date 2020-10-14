@@ -1,0 +1,8 @@
+version: '2'
+services:
+  elwiz:
+    container_name: elwiz
+    restart: unless-stopped
+    image: dmncr/elwiz
+    volumes:
+      - "/srv/docker/elwiz/config.yaml:/ElWiz/config.yaml"
